@@ -1,0 +1,5 @@
+CTRL t
+DELAY 10
+STRING https://github.com/Sped32DJ
+ENTER
+REM TODO Make it automatically follow me on github

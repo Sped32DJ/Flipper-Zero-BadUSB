@@ -1,0 +1,6 @@
+GUI r
+DELAY 500
+STRING powershell Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+DELAY 200
+STRING irm get.scoop.sh | iex
+ENTER
